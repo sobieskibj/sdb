@@ -1,0 +1,11 @@
+_target_: torch.utils.data.DataLoader
+dataset:
+  _target_: dataset.rsna.RSNAIHDataset
+  path_data: data/datasets/rsna/data/train
+  path_metadata: data/metadata/rsna/train.csv
+  n_samples: 8192
+  transform: null
+  expected_size: 512
+  n_skip: 0
+batch_size: 8
+num_workers: 0

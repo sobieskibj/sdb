@@ -1,0 +1,2 @@
+_target_: timestep_sampler.power_law.PowerLawTimestepSampler
+power: 0.5

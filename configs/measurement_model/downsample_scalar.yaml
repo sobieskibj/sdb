@@ -1,0 +1,3 @@
+_target_: measurement_model.downsample_scalar.DownsampleModelWithScalarCovarianceNoise
+kernel_size: 4
+var: 0.01

@@ -1,0 +1,32 @@
+defaults:
+  - _self_
+  - measurement_model: ct_projector_scalar
+  - diffusion: goub
+  - sde: rsna/goub
+  - network: rsna/unet_2d_goub
+  - ema_network: default
+  - optimizer: adam_default
+  - lr_scheduler: multistep_default
+  - loss_function: l1
+  - dataloader@train_dataloader: rsna/train
+  - dataloader@val_dataloader: rsna/val
+  - metric: all_rsna
+  - wandb: default
+  - fabric: single_gpu
+  - hydra: default
+
+exp:
+  seed: 42
+  log_dir: # set during runtime to automatically created dir
+
+  run_func: 
+    _target_: experiment.train_diffusion.run
+
+  log_assets: false
+  eval_ema: false
+  n_epochs: 256
+  log_frequency: 8 # every this number of batches data is logged to wandb
+  validation_frequency: 16 # every this number of epochs validation is performed
+  save_frequency: 8 # every this number of epochs checkpoint is saved
+  batch_accum: 1
+  load_ckpt:

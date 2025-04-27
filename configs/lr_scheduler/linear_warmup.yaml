@@ -1,0 +1,3 @@
+_partial_: true
+_target_: lr_scheduler.linear_warmup.LinearWarmupLRScheduler
+warmup_steps: 10

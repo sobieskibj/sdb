@@ -1,0 +1,2 @@
+_target_: metric.lpips.LPIPS
+correct_scale_and_shape: false

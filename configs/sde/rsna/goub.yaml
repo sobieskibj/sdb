@@ -1,0 +1,5 @@
+_target_: sde.goub.GOUB
+lambda_square: 30
+T: 100
+schedule: cosine
+eps: 0.005

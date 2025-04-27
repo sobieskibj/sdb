@@ -1,0 +1,2 @@
+_target_: variance_schedule.exponential.ExponentialVarianceSchedule
+k: 5.0

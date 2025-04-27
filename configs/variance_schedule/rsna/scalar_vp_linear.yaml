@@ -1,0 +1,2 @@
+_target_: variance_schedule.scalar_vp_linear.ScalarLinearVPVarianceSchedule
+log_assets: ${exp.log_assets}

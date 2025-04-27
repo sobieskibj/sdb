@@ -1,0 +1,9 @@
+_partial_: true
+_target_: lr_scheduler.multistep.MultiStepLR_Restart
+milestones: [85, 142, 170, 213]
+restarts: [0]
+restart_weights: [1]
+gamma: 0.5
+gamma_: 0.5
+clear_state: false
+last_epoch: -1

@@ -1,0 +1,3 @@
+_target_: metric.fid.FID
+dims: 2048
+correct_scale_and_shape: true

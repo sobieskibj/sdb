@@ -1,0 +1,6 @@
+_target_: sde.scalar.ScalarSDE
+measurement_system: ${measurement_model}
+variance_schedule: ${variance_schedule}
+guidance: ${guidance}
+reverse_type: SDE
+jump_start: false

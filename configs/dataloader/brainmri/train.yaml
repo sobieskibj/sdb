@@ -1,0 +1,18 @@
+_target_: torch.utils.data.DataLoader
+dataset:
+  _target_: dataset.brainmri.BrainMRIDataset
+  path_data: data/datasets/brainmri/train
+  split: Training
+  n_skip: 0
+  transform:
+    _target_: torchvision.transforms.Compose
+    transforms:
+      - _partial_: true
+        _target_: transform.pad_to_square.pad_tensor_to_square
+      - _target_: torchvision.transforms.RandomHorizontalFlip
+        p: 0.5
+      - _target_: torchvision.transforms.Resize
+        size: 256
+  n_samples: 2448
+batch_size: 8
+num_workers: 0

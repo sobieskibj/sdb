@@ -1,0 +1,6 @@
+_target_: diffusion.irsde.IRSDE
+measurement_likelihood: ${measurement_model}
+endpoint_type: PSEUDOINVERSE_RECONSTRUCTION
+reverse_type: SDE
+n_sampling_timesteps: 1
+sde: ${sde}

@@ -1,0 +1,5 @@
+_target_: timestep_sampler.power_function.PowerFunctionTimestepSampler
+power: 2
+epsilon: 0.01
+epsilon_ub: 0.05
+log_assets: ${exp.log_assets}

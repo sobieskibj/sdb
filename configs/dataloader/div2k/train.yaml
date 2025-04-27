@@ -1,0 +1,18 @@
+_target_: torch.utils.data.DataLoader
+dataset:
+  _target_: dataset.div2k.DIV2KDataset
+  path_data: data/datasets/div2k/DIV2K_train_HR
+  split: train
+  n_samples: 800
+  transform:
+    _target_: torchvision.transforms.Compose
+    transforms:
+      - _target_: torchvision.transforms.RandomHorizontalFlip
+        p: 0.5
+      - _partial_: true
+        _target_: transform.random_rot90.random_rotate_90
+        p: 0.5
+      - _target_: torchvision.transforms.RandomCrop
+        size: [256, 256]
+batch_size: 8
+num_workers: 0

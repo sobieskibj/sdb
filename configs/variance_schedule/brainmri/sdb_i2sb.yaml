@@ -1,0 +1,4 @@
+_target_: variance_schedule.sdb_i2sb.SDBI2SBVarianceSchedule
+beta_min: 0.5
+beta_max: 2.0
+log_assets: ${exp.log_assets}

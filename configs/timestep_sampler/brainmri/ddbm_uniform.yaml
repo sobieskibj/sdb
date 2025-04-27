@@ -1,0 +1,3 @@
+_target_: timestep_sampler.ddbm_uniform.UniformDDBMTimestepSampler
+sigma_min: ${diffusion.sigma_min}
+sigma_max: ${diffusion.sigma_max}

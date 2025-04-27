@@ -1,0 +1,4 @@
+_target_: measurement_model.downsample_upsample_scalar.DownsampleUpsampleModelWithScalarCovarianceNoise
+scale_factor: 4
+upsample_A: true
+var: 0.0

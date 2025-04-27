@@ -1,0 +1,6 @@
+_target_: measurement_model.ct_projector.CTProjectorModelWithScalarCovarianceNoise
+path_assets: data/metadata/rsna/assets
+var: 0.0001
+min_snr: 3.2
+use_idx_null: true
+direct: true

@@ -1,0 +1,26 @@
+_target_: network.unet_2d_goub.UNet2DGOUD
+in_nc: 1
+out_nc: 1
+nf: 64
+depth: 4
+condition_type: PSEUDOINVERSE_RECONSTRUCTION
+condition_transform_type: CONCATENATION
+transform_x:
+    _target_: torchvision.transforms.Compose
+    transforms:
+      - _target_: torchvision.transforms.Normalize
+        mean: [0.0]
+        std: [0.3]
+transform_cond:
+    _target_: torchvision.transforms.Compose
+    transforms:
+      - _target_: torchvision.transforms.Normalize
+        mean: [0.0]
+        std: [0.3]
+inv_transform_x:
+    _target_: torchvision.transforms.Compose
+    transforms:
+      - _target_: torchvision.transforms.Normalize
+        mean: [0.0]
+        std: [3.333]
+prediction_type: X_0

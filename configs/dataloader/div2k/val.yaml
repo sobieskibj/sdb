@@ -1,0 +1,13 @@
+_target_: torch.utils.data.DataLoader
+dataset:
+  _target_: dataset.div2k.DIV2KDataset
+  path_data: data/datasets/div2k/DIV2K_valid_HR
+  split: valid
+  n_samples: 100
+  transform:
+    _target_: torchvision.transforms.Compose
+    transforms:
+      - _target_: torchvision.transforms.CenterCrop
+        size: [256, 256]
+batch_size: 32
+num_workers: 0

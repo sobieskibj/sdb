@@ -1,0 +1,2 @@
+_target_: timestep_sampler.inverse_exponential.InverseExponentialTimestepSampler
+k: ${variance_schedule.k}

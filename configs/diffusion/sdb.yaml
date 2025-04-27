@@ -1,0 +1,4 @@
+_target_: diffusion.sdb.SDB
+sde: ${sde}
+timestep_sampler: ${timestep_sampler}
+solver: ${solver}

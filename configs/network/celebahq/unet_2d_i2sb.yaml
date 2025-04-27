@@ -1,0 +1,11 @@
+_target_: network.unet_2d_goub.UNet2DGOUD
+in_nc: 3
+out_nc: 3
+nf: 64
+depth: 4
+condition_type: PSEUDOINVERSE_RECONSTRUCTION
+condition_transform_type: CONCATENATION
+transform_x: null
+inv_transform_x: null
+transform_cond: null
+prediction_type: EPSILON

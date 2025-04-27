@@ -1,0 +1,2 @@
+_target_: noise_schedule.exponential.ExponentialNoiseSchedule
+k: 5.0

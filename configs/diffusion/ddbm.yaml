@@ -1,0 +1,10 @@
+_target_: diffusion.ddbm.DDBM
+measurement_likelihood: ${measurement_model}
+endpoint_type: PSEUDOINVERSE_RECONSTRUCTION
+beta_d: 2.0
+beta_min: 0.1
+sigma_min: 0.0001
+sigma_max: 1.0
+guidance_scale: 0.7
+timestep_sampler: ${timestep_sampler}
+n_sampling_timesteps: 1

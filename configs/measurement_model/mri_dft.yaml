@@ -1,0 +1,4 @@
+_target_: measurement_model.mri_dft.MRIDFTModelWithScalarCovarianceNoise
+path_masks: data/metadata/brainmri/masks_rfft_256x256.pt
+# path_masks: data/metadata/brainmri/masks_rfft_128x128.pt
+var: 5.0

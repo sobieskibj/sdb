@@ -1,0 +1,3 @@
+_target_: noise_schedule.true_cosine.TrueCosineNoiseSchedule
+s: 0.008
+min_t: ${timestep_sampler.epsilon}

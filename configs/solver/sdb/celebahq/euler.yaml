@@ -1,0 +1,2 @@
+_target_: solver.euler.EulerSolver
+n_sampling_timesteps: 100

@@ -1,0 +1,4 @@
+_target_: diffusion.sgm.SGM
+sde: ${sde}
+timestep_sampler: ${timestep_sampler}
+n_sampling_timesteps: 100

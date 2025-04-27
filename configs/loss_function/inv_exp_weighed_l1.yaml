@@ -1,0 +1,8 @@
+_partial_: true
+_target_: loss_function.inv_exp_weighed_l1.inv_exp_weighed_l1
+k: ${timestep_sampler.k}
+exp_m1:
+  _target_: torch.exp
+  _args_:
+    - _target_: torch.tensor
+      _args_: [-1.0]

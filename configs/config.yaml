@@ -1,0 +1,21 @@
+defaults:
+  - _self_
+  - measurement_model: ???
+  - null_space_covariance: ???
+  - diffusion: ???
+  - network: ???
+  - trainer: ???
+  - loss_function: ???
+  - optimizer: ???
+  - lr_scheduler: ???
+  - dataloader@train_dataloader: ???
+  - dataloader@val_dataloader: ???
+  - wandb: ???
+  - fabric: ???
+
+exp:
+  seed: 42
+  log_dir: # set during runtime to automatically created dir
+
+  run_func: 
+    _target_: ???

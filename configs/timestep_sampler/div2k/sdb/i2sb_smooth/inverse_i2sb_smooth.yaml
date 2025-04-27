@@ -1,0 +1,5 @@
+_target_: timestep_sampler.inverse_i2sb_smooth.InverseI2SBSmoothTimestepSampler
+epsilon: 0.01
+epsilon_ub: 0.05
+alpha: 2.0
+log_assets: ${exp.log_assets}

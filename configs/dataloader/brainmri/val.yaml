@@ -1,0 +1,16 @@
+_target_: torch.utils.data.DataLoader
+dataset:
+  _target_: dataset.brainmri.BrainMRIDataset
+  path_data: data/datasets/brainmri/valid
+  split: Testing
+  n_skip: 2448
+  transform:
+    _target_: torchvision.transforms.Compose
+    transforms:
+      - _partial_: true
+        _target_: transform.pad_to_square.pad_tensor_to_square
+      - _target_: torchvision.transforms.Resize
+        size: 256
+  n_samples: 612
+batch_size: 32
+num_workers: 0

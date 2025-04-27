@@ -1,0 +1,9 @@
+_target_: torch.utils.data.DataLoader
+dataset:
+  _target_: dataset.celebahq.CelebAHQDataset
+  path_data: data/datasets/celebahq/val
+  split: valid
+  n_samples: 3000
+  transform: null
+batch_size: 32
+num_workers: 0

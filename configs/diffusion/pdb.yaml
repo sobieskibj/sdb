@@ -1,0 +1,10 @@
+_target_: diffusion.pdb.PseudoinverseDiffusionBridge
+measurement_likelihood: ${measurement_model}
+null_space_noise_covariance: ${null_space_covariance}
+variance_schedule: ${variance_schedule}
+timestep_sampler: ${timestep_sampler}
+n_sampling_timesteps: 1
+reverse_type: SDE
+low_snr_trick: false
+low_snr_trick_thr: 1.0
+naive_last: false

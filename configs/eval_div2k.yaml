@@ -1,0 +1,22 @@
+defaults:
+  - _self_
+  - dataloader@val_dataloader: div2k/val
+  - metric: all_div2k
+  - wandb: default
+  - fabric: single_gpu
+  - hydra: default
+
+exp:
+  seed: 42
+  log_dir: # set during runtime to automatically created dir
+
+  run_func: 
+    _target_: experiment.eval_diffusion.run
+
+  train_log_dir: ???
+  n_ckpts_to_skip: 0 
+  every_n_ckpt: ???
+  n_ckpts_total:
+
+  log_assets: false
+  eval_ema: false

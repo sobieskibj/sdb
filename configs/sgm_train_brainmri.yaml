@@ -1,0 +1,35 @@
+defaults:
+  - _self_
+  - measurement_model: mri_dft
+  - diffusion: sgm
+  - sde: brainmri/scalar
+  - guidance: brainmri/dps
+  - network: brainmri/unet_2d_sgm
+  - ema_network: default
+  - optimizer: adam_default
+  - lr_scheduler: multistep_sgm
+  - loss_function: l1
+  - timestep_sampler: brainmri/sgm/uniform
+  - variance_schedule: brainmri/scalar_vp_linear
+  - dataloader@train_dataloader: brainmri/train
+  - dataloader@val_dataloader: brainmri/val
+  - metric: all_brainmri
+  - wandb: default
+  - fabric: single_gpu
+  - hydra: default
+
+exp:
+  seed: 42
+  log_dir: # set during runtime to automatically created dir
+
+  run_func: 
+    _target_: experiment.train_diffusion.run
+
+  log_assets: false
+  eval_ema: false
+  n_epochs: 256
+  log_frequency: 8 # every this number of batches data is logged to wandb
+  validation_frequency: 16 # every this number of epochs validation is performed
+  save_frequency: 8 # every this number of epochs checkpoint is saved
+  batch_accum: 8
+  load_ckpt:

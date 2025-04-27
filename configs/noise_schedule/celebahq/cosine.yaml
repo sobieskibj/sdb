@@ -1,0 +1,4 @@
+_target_: noise_schedule.cosine.CosineNoiseSchedule
+s: 0.008
+sqrt_f: false
+squared_weight: false

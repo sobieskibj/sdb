@@ -1,0 +1,4 @@
+defaults:
+- fid: default
+- lpips: default
+- psnr_ssim: default

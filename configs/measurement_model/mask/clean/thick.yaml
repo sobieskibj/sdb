@@ -1,0 +1,4 @@
+_target_: measurement_model.mask_clean.MaskModelWithNoNoise
+path_masks: data/metadata/masks/celebahq/thick
+add_mask: false
+var: 0.0
