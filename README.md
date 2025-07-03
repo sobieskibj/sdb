@@ -1,4 +1,4 @@
-# System-embedded Diffusion Bridges
+# [System-embedded Diffusion Bridges](https://arxiv.org/abs/2506.23726)
 
 To run any experiment, this source code uses the following convention:
 
